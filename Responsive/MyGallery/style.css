@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --name-color: #4E5150;
+    --gray1-color: #A9A9A9;
+    --number-color: #4E5150;
+    --gray2-color: #BDBDBD;
+    --border-color: #e5e5e5;
+    --font-family: Montserrat;
+}
+
+body {
+    font-family: var(--font-family);    
+}
+
+/* Profile Image */
+.profile > img {    
+    width: 80px;
+    height: 80px;
+    border-radius: 15%;
+}
+
+/* Details */
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--name-color);
+}
+
+.details > p {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--gray1-color);
+    opacity: 70%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;  
+    width: 25rem;
+    margin: auto;
+    align-items: center;
+}
+
+.item {    
+    background-color: var(--border-color);
+    border-radius: 10%;
+    margin: 0 1rem;
+    padding: 1rem 0; 
+    width: 5rem;
+    font-weight: bold;
+}
+
+.item > h6 {
+    font-size: 14px;
+    margin: 0;    
+}
+
+.item > p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--gray2-color);
+}
+
+/* Image Grid */
+section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 1rem;
+    grid-template:
+    "image1 image2 image2"
+    "image3 image3 image4"
+    "image5 image6 image4" ;
+}
+
+.image-1 {
+    grid-area: image1;
+}
+.image-2 {
+    grid-area: image2;
+}
+.image-3 {
+    grid-area: image3;
+}
+.image-4 {
+    grid-area: image4;
+}
+.image-5 {
+    grid-area: image5;
+}
+.image-6 {
+    grid-area: image6;
+}
+
+.image > img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > span {
+    margin: 0 5px;    
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray1-color);
+    opacity: 70%;
+    transition: 0.5s ease-in-out;
+}
+
+a:hover {
+    opacity: 100%;
+    transition: 0.5s ease-in-out;
+}
