@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+:root {
+    --button-color: #F2994A;
+    --heading-font: Playfair-Display;
+    --body-font: Montserrat;
+    --gray1-color: #333333;
+    --gray2-color: #4F4F4F;
+    --gray3-color: #C4C4C4;
+    --gray4-color: #BDBDBD;
+    --footer-color: #828282;
+    --white-color: #FFFFFF;
+}
+
+body {
+    font-family: var(--body-font);
+    padding: 2rem 0;
+}
+
+
+/* Header Section */
+h1 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.header > img {
+    margin-top: 3px;
+}
+
+.intro {    
+    color: var(--gray2-color);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 1rem;
+    width: 50%;
+}
+
+/* Ingredients section */
+section {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.ingredients > h1 {
+    font-size: 40px;
+    color: var(--gray1-color);
+    font-family: var(--heading-font);
+}
+
+.ingredients > h3 {
+    font-size: 22px;
+    font-style: italic;
+    color: var(--gray1-color);
+    font-family: var(--heading-font);
+    margin: 2rem 0;
+}
+
+.checkbox {
+    margin: 1rem 0;
+}
+
+.checkbox-label > span {
+    font-weight: bold;
+}
+
+.checkbox-label > span.moderate {
+    font-style: italic;    
+}
+
+/* Aside */
+aside {
+    height: fit-content;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.item > span {
+    font-size: 40px;
+}
+
+.item {
+    display: flex;
+    margin: 2rem 1rem;
+}
+
+.item_description > p{
+    margin: 0;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.item_name {
+    color: var(--gray4-color);
+    font-size: 12px;    
+}
+
+.item_value {
+    font-size: 14px;    
+}
+
+.dinner {
+    color: var(--button-color);    
+}
+
+/* Instructions */
+.instructions {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+}
+
+.instructions > p.number {
+    font-family: var(--heading-font);
+    font-size: 24px;
+    background-color: var(--button-color);    
+    color: var(--white-color);
+    font-weight: bold;
+    height: fit-content;
+    text-align: center;
+    border-radius: 10%;
+    padding: 3px 0;
+}
+
+.instructions > p.info {
+    margin-left: 1rem;
+}
+
+p.info > span {
+    font-weight: bold;
+}
+
+h3.source {
+    color: var(--gray4-color);
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > span {
+    margin: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--footer-color);    
+    transition: 0.5s ease-in-out;
+}
+
+a:hover {
+    opacity: 60%;
+    transition: 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px){
+    section {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section > aside {
+        box-shadow: none;
+        display: grid;
+        /* grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr; */
+        grid-template: 
+        "item1 item1 item1"
+        "item2 item3 item4";
+    }
+    .item1 {
+        grid-area: item1;
+    }
+    .item2 {
+        grid-area: item2;
+    }
+    .item3 {
+        grid-area: item3;
+    }
+    .item4 {
+        grid-area: item4;
+    }
+    .item {
+        display: flex;
+        margin: 1rem 0;
+    }
+    .item_value {
+        font-size: 12px;    
+    }
+}
