@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins;
+    background-color: #FAFAFA;
+}
+
+
+/* Header */
+header {    
+    margin-top: 4rem;
+    display: flex;    
+}
+
+h1 {
+    flex-basis: 100%;
+    font-family: PT-serif;
+    text-align: center;    
+}
+
+p {
+    width: 60%;
+}
+
+.description {
+    flex-basis: 100%;
+}
+
+/* Image Grid */
+img {
+    width: 200px;
+    height: 200ox;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;    
+    margin: 4rem 10rem;    
+}
+
+.card {
+    padding: 0 0 3rem 0;
+}
+
+/* .card:nth-child(3n-1) {
+    padding: 3rem 0 0 0;
+} */
+
+.vertical {
+    display: inline-block;
+    vertical-align: top;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    font-family: PT-serif;
+    font-size: 12px;
+}
+
+.card_name {
+    font-size: 12px;
+    width: 100%;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;    
+}
+
+a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+a:hover {
+    color: #f0402c;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .card:nth-child(3n-1) {
+        padding: 3rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;    
+        /* margin: 4rem 10rem;  */   
+    }    
+    .card:nth-child(2n) {
+        padding: 3rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {            
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+
+    h1 {
+        text-align: left;
+        margin-bottom: 2rem;
+    }    
+}
