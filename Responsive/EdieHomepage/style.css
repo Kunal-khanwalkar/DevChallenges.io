@@ -1,0 +1,73 @@
+:root {
+    --heading-font: Heebo;
+    --body-font: Poppins;
+    --intro-p-color: #2D9CDB;
+    --gray-color: #F2F2F2;    
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > a {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: large;    
+}
+
+
+/* Hero Section */
+.hero {
+    margin-top: 4rem;
+}
+
+.intro {
+    margin: 0 10rem;
+    width: 35%;    
+}
+
+.intro > p {
+    color: var(--intro-p-color);    
+}
+
+.outro {
+    margin: 0 10rem;
+    width: 30%;    
+}
+
+.email_input, .email_input:hover, .email_input:focus {
+    background-color: var(--gray-color);
+    border: none;
+}
+
+.btn_join, .btn_join:hover, .btn_join:focus {
+    color: var(--gray-color);
+    background-color: var(--intro-p-color);
+    width: 5rem;
+    border: var(--gray-color) 5px solid;    
+}
+
+/* Cards */
+.cards {
+    margin: 8rem 4rem;
+}
+
+.cards > h1 {
+    width: 30%;
+}
+
+.card {
+    border: none;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
