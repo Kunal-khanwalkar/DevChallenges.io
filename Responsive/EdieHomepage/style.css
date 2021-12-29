@@ -270,3 +270,65 @@ a:hover {
     justify-content: center;
     gap: 2rem;    
 }
+
+
+@media screen and (max-width: 728px) {
+ 
+    .intro, .outro {
+        margin: 0;
+        width: 100%;
+    }    
+
+    .cards {
+        margin: 4rem 2rem;
+    }
+
+    .cards_container {
+        flex-direction: column;
+    }
+
+    .showcase {
+        margin: 4rem 2rem;
+    }
+
+    .image_grid {
+        margin: 0;
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .image_item:nth-child(2n-1) {
+        margin: 0;
+    }
+
+    .team_items {   
+        margin: 0;     
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info {
+        margin: 2rem;
+        width: 80%;
+    }
+
+    .review > h1 {
+        font-size: 20px;    
+    }
+
+    .information {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .social {
+        margin: 0 2rem;
+    }
+
+    .contact-us {
+        margin: 2rem;
+        width: 80%;
+    }
+}
