@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kunal Khanwalkar</title>
+</head>
+<body>
+    <div class="container py-6">  
+            
+        <section class="introduction box">
+            <div class="columns">
+                <div class="column is-narrow">
+                    <img class="profile-img" src="">
+                </div>
+                <div class="column">
+                    <div class="columns info">
+                        <div class="column">
+                            <h3>Kunal Khanwalkar</h3>
+                            <small>Software Developer</small>
+                        </div>
+                        <div class="column is-narrow">
+                            <p><span class="icon"><i class="fa fa-envelope"></i></span> kunalkhanwalkar@gmail.com</p>
+                            <p><span class="icon"><i class="fa fa-phone"></i></span> +91-9113290266</p>
+                        </div>
+                    </div>
+                    <p>Software Developer</p>
+                </div>
+            </div>
+        </section>                    
+
+        <section class="mid-section columns">
+            <div class="column">
+              <div class="box">
+                  <h1>Skills</h1>
+                  <span><progress class="progress is-info" value="80" max="100">80%</progress> Web Development</span>
+              </div>  
+              <div class="box">
+                  <h1>Test two</h1>
+              </div>
+            </div>
+            <div class="column is-two-thirds"">
+                <div class="box">
+                    <h1>Test2</h1>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <span><a href="https://github.com/Kunal-khanwalkar">Kunal Khanwalkar</a></span>
+        <span><a href="https://devchallenges.io/">@DevChallenges.io</a></span>
+    </footer>
+</body>
+</html>
