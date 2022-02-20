@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Basic */
+#btn {
+    min-width: 81px;
+    height: 36px;
+    padding: 0 1rem;
+
+    background: #E0E0E0;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    border: none;
+    border-radius: 6px;
+
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #3F3F3F;    
+    cursor: pointer;
+}
+
+#btn.hover {
+    background: #AEAEAE;
+}
+
+#btn:hover, #btn:focus {
+    background: #AEAEAE;
+}
+
+
+/* Outline */
+#btn.outline {
+    border: 1px solid #3D5AFE;
+    border-radius: 6px;
+    background: white;
+
+    color: #3D5AFE;
+}
+
+#btn.outline.hover {
+   background: #eaefff; 
+}
+
+#btn.outline:hover, #btn.outline:focus{
+   background: #eaefff; 
+}
+
+
+/* Text */
+#btn.text {
+    border-radius: 6px;
+    background: white;
+    box-shadow: none;
+    color: #3D5AFE;
+}
+
+#btn.text.hover {
+   background: #eaefff; 
+}
+
+#btn.text:hover, #btn.text:focus{
+   background: #eaefff; 
+}
+
+/* Support Color classes */
+#btn.primary {
+    color: #FFFFFF;
+    background: #2962FF;
+}
+
+#btn.primary.hover {
+    background: #0039CB;
+}
+
+#btn.primary:hover, #btn.primary:focus {
+    background: #0039CB;
+}
+
+
+#btn.secondary {
+    color: #FFFFFF;
+    background: #455A64;
+}
+
+#btn.secondary.hover {
+    background: #1C313A;
+}
+
+#btn.secondary:hover, #btn.secondary:focus {
+    background: #1C313A;
+}
+
+
+#btn.danger {
+    color: #FFFFFF;
+    background: #D32F2F;
+}
+
+#btn.danger.hover {
+    background: #9A0007;
+}
+
+#btn.danger:hover, #btn.danger:focus {
+    background: #9A0007;
+}
+
+
+/* Disable Shadow */
+#btn.disableShadow {
+    box-shadow: none;
+}
+
+/* Disabled */
+#btn.disabled {
+    cursor: default;
+    pointer-events: none;
+    color: #9E9E9E;
+    border-color: #9E9E9E;
+}
+
+#btn.disabled:hover, #btn.disabled:focus {
+    cursor: default;
+    pointer-events: none;
+    color: #9E9E9E;
+    border-color: #9E9E9E;
+}
+
+
+/* Sizes */
+#btn.sm {
+    padding: 0;
+    width: 70px;
+    height: 30px;
+}
+
+#btn.lg {
+    width: 102px;
+    height: 40px;
+}
+
+
+/* Icons */
+.material-icons {
+    color: white;
+    font-size: 14px;
+    margin: 0 5px;
+}

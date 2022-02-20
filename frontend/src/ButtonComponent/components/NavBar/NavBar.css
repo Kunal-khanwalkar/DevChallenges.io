@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP');
+
+.sidebar {    
+    
+    background: #FAFBFD;
+
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 3rem;
+    
+    color: #9E9E9E;
+    min-height: 100vh;
+}
+
+span {
+    color: #F7542E
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 6rem;
+    color: black;
+}
+
+ul {
+    list-style-type: none;    
+}
+
+
+li {
+    margin: 1.75rem 0;
+}
+
+.current-item {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
