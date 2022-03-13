@@ -14,7 +14,7 @@ const NavBar = ({ Page }) => {
                 <li>Typography</li>
                 <li>Spaces</li>
                 <li><a href="https://62125171606d73f0b56e829c--kunal-khanwalkar-makes-great-sites.netlify.app/" className={Buttons}>Buttons</a></li>
-                <li><a href='#' className={Inputs}>Inputs</a></li>
+                <li><a href='https://622ddc6881749978d28f357c--the-great-kunal-khanwalkar-site.netlify.app/' className={Inputs}>Inputs</a></li>
                 <li>Grid</li>
             </ul>
         </nav>
