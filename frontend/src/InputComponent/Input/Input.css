@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-family: Noto Sans JP;
+    display: block;
+    font-size: 12px;
+
+    width: 31px;
+    height: 17px;
+    line-height: 17px;
+
+    color: #333333;
+    margin-bottom: 4px;
+}
+
+#inp {
+    width: 200px;
+    height: 56px;
+
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    padding: 18px 12px;
+    outline: none;
+}
+
+#inp.hover {
+    outline: none;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#inp:hover {
+    outline: none;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#inp.focus {
+    border: 1px solid #2962FF;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#inp:focus {
+    border: 1px solid #2962FF;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#lb.focus {
+    color: #2962FF;
+}
+
+#frm-group:focus-within label{
+    color: #2962FF;
+}
+
+/* Error Attribute */
+#lb.error {
+    color: #D32F2F;
+}
+
+#inp.error {
+    border: 1px solid #D32F2F;
+}
+
+#lb.error.hover {
+    color: #333333;
+}
+
+#inp.error.hover {
+    outline: none;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 8px; 
+}
+
+#inp.error:hover {
+    outline: none;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#frm-group:hover > #lb.error {
+    color: #333333;
+}
+
+#lb.error.focus {
+    color: #D32F2F !important;
+}
+
+#inp.error.focus {
+    border: 1px solid #D32F2F;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#inp.error:focus {
+    border: 1px solid #D32F2F;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#frm-group.error:focus-within label {
+    color: #D32F2F;
+}
+
+/* Helper Text */
+#ht {
+    margin-top: 5px;
+    color: #828282;
+}
+
+#ht.error {
+    color: #D32F2F;
+}
+
+#frm-group:hover > #ht.error {
+    color: #333333;
+}
+
+/* Size */
+#inp.sm {
+    height: 35px;
+}
+
+/* fullWidth */
+#frm-group.fullWidth {
+    width: 100%;
+}
+
+#inp.fullWidth {    
+    width: 100%;    
+}

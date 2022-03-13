@@ -7,7 +7,7 @@ import './App.css';
 const App = () => {
     return(
         <div className='wrapper'>
-            <NavBar />
+            <NavBar Page='Buttons'/>
             <div className='main-content'>
                 <h1>Buttons</h1>
                 <div className='row'>

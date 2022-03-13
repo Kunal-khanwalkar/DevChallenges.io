@@ -1,7 +1,11 @@
 import React from 'react';
 import './NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({ Page }) => {
+
+    let Buttons = Page==='Buttons' ? 'current-item' : '';
+    let Inputs = Page==='Inputs' ? 'current-item' : '';
+
     return (
         <nav className='sidebar'>
             <h2><a href="#"><span>Dev</span>challenges.io</a></h2>
@@ -9,8 +13,8 @@ const NavBar = () => {
                 <li>Colors</li>
                 <li>Typography</li>
                 <li>Spaces</li>
-                <li className='current-item'><a href="#">Buttons</a></li>
-                <li>Inputs</li>
+                <li><a href="https://62125171606d73f0b56e829c--kunal-khanwalkar-makes-great-sites.netlify.app/" className={Buttons}>Buttons</a></li>
+                <li><a href='#' className={Inputs}>Inputs</a></li>
                 <li>Grid</li>
             </ul>
         </nav>
